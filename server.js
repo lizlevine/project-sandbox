@@ -24,12 +24,12 @@ app.get("/", (req, res) => {
 
 // db.sequelize.sync();
 
-app.listen(process.env.PORT || 8000, () => {
+app.listen(process.env.PORT || 7000, () => {
   if (process.env.PORT) {
     console.log(
       `[START] server started successfully on port ${process.env.PORT}`
     );
   } else {
-    console.log(`[START] server started successfully at http://localhost:8000`);
+    console.log(`[START] server started successfully at http://localhost:7000`);
   }
 });

@@ -1,6 +1,6 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-white" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <img src="assets/images/luggage_logo.png" id="logo" class="spot" alt="dog silhouette" />
+        <img src="assets/images/luggage_logo.png" id="logo" class="suitcase" alt="suitcase" />
 
         <!-- <a class="navbar-item" href="https://bulma.io">
                 <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
@@ -43,8 +43,8 @@
     <div class="navbar-end">
         <div class="navbar-item">
             <div class="buttons">
-                <button class="button is-link is-outlined">Sign up</button>
-                <button class="button is-outlined">Log in</button>
+                <button class="button is-info is-outlined">Sign up</button>
+                <button class="button is-info is-outlined">Log in</button>
             </div>
         </div>
     </div>
@@ -62,24 +62,57 @@
     </div>
 </section>
 
-<section class="sidebar">
+
+<div id="main-container" class="container-home">
+    <section class="main-container">
+        <!-- <h2 class="subtitle">Welcome<strong> Home</strong>!</h2> -->
+        <div id="home-image">
+            <img src="assets/images/happy_traveler.jpg" class="portrait" id="welcome-home" alt="Eiffel Tower" />
+        </div>
+
+        <h3 id="about-gytt">How does it work?
+            <strong> very simply!</strong>
+        </h3>
+        <p>Create an account and GYTT will track your trips and everything
+            that goes along with it, including a trip-specific packing list
+            which you can edit, save and referrence for your next trip.
+
+        </p>
+        <br />
+        <p>Overwhelmed with sticky notes? Use ours instead! They will
+            remain in your account for future use.
+        </p>
+
+        <section class="sidebar">
+            <div id="connect">
+                <h2>Get the forecast</h2>
+                <a href="https://weather.com/?cm_ven=PS_GGL_Branded_04012019_1&par=MK_GGL&gclid=CjwKCAiAhc7yBRAdEiwAplGxXy36SlNTUO6w639twsfi4FTpR2bNMdQSZq7VYNh8OnHKhirEGKrlVRoCBJIQAvD_BwE"
+                    target="_blank"><img src="assets/images/weather_sun.png" class="weather" alt="sunshine" /></a>
+                <a href="https://weather.com/?cm_ven=PS_GGL_Branded_04012019_1&par=MK_GGL&gclid=CjwKCAiAhc7yBRAdEiwAplGxXy36SlNTUO6w639twsfi4FTpR2bNMdQSZq7VYNh8OnHKhirEGKrlVRoCBJIQAvD_BwE"
+                    target="_blank"><img src="assets/images/storm.png" class="weather" alt="storm" /></a>
+
+            </div>
+        </section>
+    </section>
+</div>
+
+{{!-- <section class="sidebar">
     <div id="connect">
         <h2>Get the forecast</h2>
         <a href="https://weather.com/?cm_ven=PS_GGL_Branded_04012019_1&par=MK_GGL&gclid=CjwKCAiAhc7yBRAdEiwAplGxXy36SlNTUO6w639twsfi4FTpR2bNMdQSZq7VYNh8OnHKhirEGKrlVRoCBJIQAvD_BwE"
             target="_blank"><img src="assets/images/weather_sun.png" class="weather" alt="sunshine" /></a>
         <a href="https://weather.com/?cm_ven=PS_GGL_Branded_04012019_1&par=MK_GGL&gclid=CjwKCAiAhc7yBRAdEiwAplGxXy36SlNTUO6w639twsfi4FTpR2bNMdQSZq7VYNh8OnHKhirEGKrlVRoCBJIQAvD_BwE"
             target="_blank"><img src="assets/images/storm.png" class="weather" alt="storm" /></a>
-        {{!-- <h2>Countdown to departure</h2>
-        <img src="assets/images/hourglass.png" class="weather" alt="hourglass" /> --}}
+
     </div>
-</section>
+</section> --}}
 
 <footer class="footer">
     <div class="content has-text-centered">
-        <p></p>
+        <p>"Check-in" with us for <strong>promos</strong> and travel swag!</p>
 
         <div id="connect">
-            <h6>"Check-in" with us for <strong>promos</strong> and travel swag!</h6>
+            {{!-- <h6>"Check-in" with us for <strong>promos</strong> and travel swag!</h6> --}}
             <img src="assets/images/pintrest.png" class="social" alt="Facebook icon" />
             <img src="assets/images/fb_logo.png" class="social" alt="Instagram icon" />
             <img src="assets/images/airbnb.png" class="social" alt="Twitter icon" />
